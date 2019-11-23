@@ -1,1 +1,102 @@
 // Mixins Here
+
+.buttons(@btn-bg-color,@nav-font,@nav-border) {
+  border-radius: 10px;
+  color: @nav-font;
+  background-color: @btn-bg-color;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 3px 3px 9px;
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid @nav-border;
+
+  &:hover {
+    color: red;
+    background: darken(@btn-bg-color, 10%);
+    border: 1px solid darken(@nav-border, 50%);
+  }
+}
+
+.photos() {
+  border-radius: 20px;
+  border: 2px solid darken(@btn-bg-color, 20%);
+  &:hover {
+    border: 2px solid rgba(250, 0, 0, 0.781);
+  }
+}
+
+// main borders and backgrounds
+.bkgbrd() {
+  border-radius: 20px;
+  background-color: @main-bkg;
+
+  pading: 10px;
+}
+
+//animations
+
+.bkani() {
+  animation: logobgch 6s infinite;
+
+  @keyframes logobgch {
+    0% {
+      background-color: rgba(13, 11, 141, 0.644);
+    }
+    25% {
+      background-color: rgba(0, 39, 3, 0.63);
+    }
+
+    50% {
+      background-color: rgba(116, 116, 116, 0.507);
+    }
+    75% {
+      background-color: rgba(59, 15, 70, 0.644);
+    }
+    100% {
+      background-color: rgba(97, 44, 41, 0.562);
+    }
+  }
+}
+
+.fntani() {
+  animation: logo 3s infinite;
+
+  @keyframes logo {
+    0% {
+      color: rgb(243, 9, 9);
+    }
+    50% {
+      color: rgb(233, 211, 8);
+    }
+    100% {
+      color: rgb(17, 0, 255);
+    }
+  }
+}
+
+.bkani2() {
+  animation: logo2 15s infinite;
+
+  @keyframes logo2 {
+    
+    0% {
+      background-color: darken(@main-bkg,10%);
+    }
+    25% {
+      background-color:darken(@main-bkg,20%);
+    }
+    50% {
+      background-color: darken(@main-bkg,50%);
+    }
+    75% {
+      background-color: darken(@main-bkg,20%);
+    }
+    100% {
+      background-color: darken(@main-bkg,10%);
+    }
+    
+
+  }
+}
