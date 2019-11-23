@@ -1,6 +1,4 @@
 
-## Self-Study Questions
-
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
@@ -18,4 +16,4 @@ pre processing it a better way to write css, it makes tedious coding tasks in to
 
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
- i like mixins the best but all Less gives me rouble still , i begun understanding right how to use it wile i was doing this sprint.
+ i like mixins the best but all Less gives me trouble still , i begun understanding right how to use it wile i was doing this sprint.

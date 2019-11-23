@@ -197,6 +197,11 @@ p {
     width: max-content;
   }
 }
+svg {
+  font-weight: bold;
+  max-width: 600px;
+  height: auto;
+}
 header {
   height: 140px;
   width: 100%;
@@ -426,11 +431,6 @@ footer {
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
-  border-radius: 20px;
-  border: 2px solid #040f31;
-}
-.home .walk .walk-img img:hover {
-  border: 2px solid rgba(250, 0, 0, 0.781);
 }
 @media (max-width: 500px) {
   .home .walk .walk-img {
