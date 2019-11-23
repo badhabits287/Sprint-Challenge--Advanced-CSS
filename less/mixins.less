@@ -38,9 +38,12 @@
 //animations
 
 .bkani() {
-  animation: logobgch 6s infinite;
+  background-image: url(/css/img/intro.svg);
+  
+  
+  animation: logobg 6s infinite;
 
-  @keyframes logobgch {
+  @keyframes logobg {
     0% {
       background-color: rgba(13, 11, 141, 0.644);
     }
@@ -61,7 +64,7 @@
 }
 
 .fntani() {
-  animation: logo 3s infinite;
+  animation: logo 6s infinite;
 
   @keyframes logo {
     0% {
@@ -72,14 +75,15 @@
     }
     100% {
       color: rgb(17, 0, 255);
+      
     }
   }
 }
 
 .bkani2() {
-  animation: logo2 15s infinite;
 
-  @keyframes logo2 {
+  animation: mainbg 10s infinite;
+  @keyframes mainbg {
     
     0% {
       background-color: darken(@main-bkg,10%);
