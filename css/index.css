@@ -194,81 +194,6 @@ p {
     width: max-content;
   }
 }
-.container2 {
-  letter-spacing: 2px;
-  font-size: 15px;
-  max-width: 800px;
-  width: 100%;
-  margin: 150px auto;
-  display: flex;
-  flex-direction: row;
-}
-.container2 form {
-  padding: 10px;
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.container2 form .btn {
-  cursor: pointer;
-  width: fit-content;
-  border-radius: 10px;
-  color: #b1b6c5;
-  background-color: #0c2d8f;
-  font-size: 20px;
-  font-weight: bold;
-  text-shadow: 3px 3px 9px;
-  text-decoration: none;
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid #F1F1F1;
-}
-.container2 form .btn:hover {
-  color: red;
-  background: #081e60;
-  border: 1px solid #727272;
-}
-.container2 form2 {
-  border-radius: 20px;
-  background-color: rgba(7, 5, 143, 0.815);
-  pading: 10px;
-  padding: 10px;
-  border: 1px solid silver;
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.container2 form2 .btn {
-  cursor: pointer;
-  width: fit-content;
-  border-radius: 10px;
-  color: #b1b6c5;
-  background-color: #0c2d8f;
-  font-size: 20px;
-  font-weight: bold;
-  text-shadow: 3px 3px 9px;
-  text-decoration: none;
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid #F1F1F1;
-}
-.container2 form2 .btn:hover {
-  color: red;
-  background: #081e60;
-  border: 1px solid #727272;
-}
-@media (max-width: 500px) {
-  .container2 {
-    font-size: 10px;
-    display: flex;
-    flex-direction: column;
-    width: max-content;
-  }
-}
 header {
   height: 140px;
   width: 100%;
@@ -284,6 +209,28 @@ header {
   border-bottom-left-radius: 100px;
   background-image: url(/css/img/intro.svg);
   animation: logobg 6s infinite;
+}
+header h1 {
+  margin: 5px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow: hidden;
+  animation: logo 6s infinite;
+}
+@keyframes logo {
+  0% {
+    color: #f30909;
+  }
+  50% {
+    color: #e9d308;
+  }
+  100% {
+    color: #1100ff;
+  }
 }
 @keyframes logobg {
   0% {
@@ -313,7 +260,7 @@ header nav a {
   background-color: #0c2d8f;
   font-size: 20px;
   font-weight: bold;
-  text-shadow: 3px 3px 9px;
+  text-shadow: 3px 3px 6px;
   text-decoration: none;
   margin: 10px;
   padding: 10px;
@@ -323,28 +270,6 @@ header nav a:hover {
   color: red;
   background: #081e60;
   border: 1px solid #727272;
-}
-h1 {
-  margin: 5px;
-  padding: 10px;
-  font-weight: bold;
-  font-size: 6rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  overflow: hidden;
-  animation: logo 6s infinite;
-}
-@keyframes logo {
-  0% {
-    color: #f30909;
-  }
-  50% {
-    color: #e9d308;
-  }
-  100% {
-    color: #1100ff;
-  }
 }
 footer {
   color: #22283B;
@@ -357,12 +282,17 @@ footer {
   align-items: center;
   color: lightslategray;
 }
+@media (max-width: 500px) {
+  footer {
+    width: 100%;
+  }
+}
 .home .intro img {
   border-radius: 20px;
   border: 2px solid #040f31;
 }
 .home .intro img:hover {
-  border: 2px solid rgba(250, 0, 0, 0.781);
+  border: 2px solid #164beb;
 }
 .home .intro h2 {
   padding: 15px;
@@ -394,7 +324,7 @@ footer {
   height: 100%;
 }
 .home .space-images img:hover {
-  border: 2px solid rgba(250, 0, 0, 0.781);
+  border: 2px solid #164beb;
 }
 @media (max-width: 500px) {
   .home .space-images {
@@ -473,7 +403,7 @@ footer {
   background-color: #0c2d8f;
   font-size: 20px;
   font-weight: bold;
-  text-shadow: 3px 3px 9px;
+  text-shadow: 3px 3px 6px;
   text-decoration: none;
   margin: 10px;
   padding: 10px;
@@ -499,6 +429,11 @@ footer {
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
+  border-radius: 20px;
+  border: 2px solid #040f31;
+}
+.home .walk .walk-img img:hover {
+  border: 2px solid #164beb;
 }
 @media (max-width: 500px) {
   .home .walk .walk-img {
@@ -506,9 +441,14 @@ footer {
     border-radius: 20px;
     border: 2px solid #040f31;
     padding: 10px;
-    margin-left: 0;
+    margin: 0;
   }
   .home .walk .walk-img:hover {
-    border: 2px solid rgba(250, 0, 0, 0.781);
+    border: 2px solid #164beb;
+  }
+}
+@media (max-width: 500px) {
+  .home {
+    height: 100vh;
   }
 }
