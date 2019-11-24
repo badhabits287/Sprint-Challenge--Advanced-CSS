@@ -1,15 +1,16 @@
 // parametric Mixins Here
 
 .buttons(@btn-bg-color,@nav-font,@nav-border) {
+  font-family: "Russo One", sans-serif;
   border-radius: 10px;
   color: @nav-font;
   background-color: @btn-bg-color;
-  font-size: 20px;
+  font-size:3em;
   font-weight: bold;
-  text-shadow: 3px 3px 6px;
+  text-shadow: 1px 1px 6px;
   text-decoration: none;
-  margin: 10px;
-  padding: 10px;
+  margin: 5px;
+  padding: 5px;
   border: 1px solid @nav-border;
 
   &:hover {
@@ -18,8 +19,25 @@
     border: 1px solid darken(@nav-border, 50%);
   }
 }
-//Mixins Here
+//fle Mixins Here
+.frc(){
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
+.fcev(){
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.boxbrdbk(){
+  margin:10px;
+  padding:10px;
+  border-radius: 20px;
+  border: 2px solid darken(@btn-bg-color, 20%);
+  background: darken(@btn-bg-color, 10%);
+}
 .photos() {
   border-radius: 20px;
   border: 2px solid darken(@btn-bg-color, 20%);
@@ -31,6 +49,7 @@
 //animations
 
 .bkani() {
+  
   background-image: url(/css/img/intro.svg);
   animation: logobg 6s infinite;
   @keyframes logobg {

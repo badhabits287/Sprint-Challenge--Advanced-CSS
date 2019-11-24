@@ -201,10 +201,8 @@ header {
   position: fixed;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background: rgba(5, 37, 107, 0.808);
   overflow: hidden;
-  border-bottom: 2px solid silver;
+  border-bottom: 2px solid #4570ef;
   border-bottom-right-radius: 100px;
   border-bottom-left-radius: 100px;
   background-image: url(/css/img/intro.svg);
@@ -255,15 +253,16 @@ header nav {
   justify-content: center;
 }
 header nav a {
+  font-family: "Russo One", sans-serif;
   border-radius: 10px;
   color: #b1b6c5;
   background-color: #0c2d8f;
-  font-size: 20px;
+  font-size: 3em;
   font-weight: bold;
-  text-shadow: 3px 3px 6px;
+  text-shadow: 1px 1px 6px;
   text-decoration: none;
-  margin: 10px;
-  padding: 10px;
+  margin: 5px;
+  padding: 5px;
   border: 1px solid #F1F1F1;
 }
 header nav a:hover {
@@ -271,16 +270,60 @@ header nav a:hover {
   background: #081e60;
   border: 1px solid #727272;
 }
+@media (max-width: 500px) {
+  header {
+    width: 100%;
+  }
+}
 footer {
-  color: #22283B;
-  background: rgba(5, 37, 107, 0.808);
-  padding: 20px 0;
-  border: 1px double #e0e0e0;
-  border-radius: 10px;
+  z-index: inherit 1;
+  width: 100%;
+  height: 30px;
+  left: 0;
+  bottom: 0%;
+  position: fixed;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  color: lightslategray;
+  overflow: hidden;
+  border-top: 2px solid #4570ef;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
+  background-image: url(/css/img/intro.svg);
+  animation: logobg 6s infinite;
+}
+@keyframes logobg {
+  0% {
+    background-color: rgba(13, 11, 141, 0.644);
+  }
+  25% {
+    background-color: rgba(0, 39, 3, 0.63);
+  }
+  50% {
+    background-color: rgba(116, 116, 116, 0.507);
+  }
+  75% {
+    background-color: rgba(59, 15, 70, 0.644);
+  }
+  100% {
+    background-color: rgba(97, 44, 41, 0.562);
+  }
+}
+footer p {
+  font-weight: bold;
+  overflow: hidden;
+  animation: logo 6s infinite;
+}
+@keyframes logo {
+  0% {
+    color: #f30909;
+  }
+  50% {
+    color: #e9d308;
+  }
+  100% {
+    color: #1100ff;
+  }
 }
 @media (max-width: 500px) {
   footer {
@@ -398,15 +441,16 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
+  font-family: "Russo One", sans-serif;
   border-radius: 10px;
   color: #b1b6c5;
   background-color: #0c2d8f;
-  font-size: 20px;
+  font-size: 3em;
   font-weight: bold;
-  text-shadow: 3px 3px 6px;
+  text-shadow: 1px 1px 6px;
   text-decoration: none;
-  margin: 10px;
-  padding: 10px;
+  margin: 5px;
+  padding: 5px;
   border: 1px solid #F1F1F1;
   width: 110px;
   text-align: center;
@@ -449,6 +493,33 @@ footer {
 }
 @media (max-width: 500px) {
   .home {
-    height: 100vh;
+    height: 100%;
   }
+}
+.signin {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px solid #040f31;
+  background: #081e60;
+}
+.signin .btn {
+  font-family: "Russo One", sans-serif;
+  border-radius: 10px;
+  color: #b1b6c5;
+  background-color: #0c2d8f;
+  font-size: 3em;
+  font-weight: bold;
+  text-shadow: 1px 1px 6px;
+  text-decoration: none;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid #F1F1F1;
+  width: fit-content;
+  cursor: pointer;
+}
+.signin .btn:hover {
+  color: red;
+  background: #081e60;
+  border: 1px solid #727272;
 }

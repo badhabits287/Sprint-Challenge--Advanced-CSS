@@ -6,9 +6,7 @@ header {
     padding: 10px;
     font-weight: bold;
     font-size: 6rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    .frc();
     overflow: hidden;
     .fntani();
   }
@@ -20,21 +18,21 @@ header {
   position: fixed;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background: @nav-bg;
   overflow: hidden;
-  border-bottom:2px solid silver;
+  border-bottom:2px solid lighten(@btn-bg-color, 30%);
   border-bottom-right-radius: 100px;
   border-bottom-left-radius: 100px;
   .bkani();
 
   nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    .frc();
   }
   nav a {
     .buttons(@btn-bg-color, @nav-font, @nav-border);
   }
+  @media @phone {
+   width:100%;
+   
+}
 }
 
